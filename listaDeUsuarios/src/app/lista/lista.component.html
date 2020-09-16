@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="container-lista">
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th><div class="col-md-3">ID</div></th>
+            <th><div class="col-md-3">Nome</div></th>
+            <th><div class="col-md-3">Data de Nascimento</div></th>
+            <th><div class="col-md-3">Sexo</div></th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of listaDeUsers">
+              <td><div class="col-md-3">{{item.id}}</div></td>
+              <td><div class="col-md-3">{{item.name}}</div></td>
+              <td><div class="col-md-3">{{item.dtNascimento | date:"dd/MM/yyyy"}}</div></td>
+              <td><div class="col-md-3">{{item.sexo}}</div></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
